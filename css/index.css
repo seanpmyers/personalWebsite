@@ -1,3 +1,25 @@
+.navBar {
+    background-color: black;
+    color: white;
+    width: 25%;
+}
+.navBar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: white;
+}
+.navBar-item {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.navBar-item:hover {
+    background-color: green;
+    color: white;
+}
 body {
     text-align: center;
 }
