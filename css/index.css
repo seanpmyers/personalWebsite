@@ -5,15 +5,17 @@ html {
     font-family: 'Roboto', Helvetica;
 }
 .header {
-    background-color: gainsboro;
-    padding: 10px;
+    background-color: #263b4b;
+    color: rgb(137, 178, 240);
+    padding: 20px;
+    font-size: 50px;
 }
 .navBar-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 150px;
-    background-color: #f3f3f3;
+    background-color: #ffffff;
     text-align: center;
     height: 100%;
     overflow: auto;
@@ -21,19 +23,22 @@ html {
 }
 .navBar-item {
     display: block;
-    color: #666;
+    color: rgb(137, 178, 240);
     padding: 8px 16px;
     text-decoration: none;
-    border: 1px solid #e7e7e7;
+    
 }
 .navBar-item:hover {
-    background-color: rgb(59, 126, 172);
-    color: white;
+    background-color: rgb(137, 178, 240);
+    color: #263b4b;
 }
 #navBar-item-active {
-    background-color: rgb(59, 126, 172);
-    color: white;
+    background-color: rgb(137, 178, 240);
+    color: #263b4b;
 }
 body {
     text-align: center;
+    background: #ffffff;
+    background-size: 400% 400%;
+    color: rgb(49, 49, 49);
 }
