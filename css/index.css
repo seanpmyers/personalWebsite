@@ -30,6 +30,7 @@ html {
 .navBar-item:hover {
     background-color: rgb(238, 238, 238);
     color: #000000;
+    opacity: 1;
 }
 #navBar-item-active {
     background-color: rgb(238, 238, 238);
@@ -41,15 +42,10 @@ body {
     background-size: 400% 400%;
     color: rgb(49, 49, 49);
 }
-footer {
-    display: block;
-    color: black;
-    background-color: #ffffff;
+.footer {
     list-style-type: none;
-}
-.parent:hover > div {
-    opacity: 0.5;
-}
-.parent:hover > div:hover {
-    opacity: 1.0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
 }
