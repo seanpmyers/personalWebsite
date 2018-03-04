@@ -1,51 +1,84 @@
-/*.navBar {
-    
-}*/
-html {
-    font-family: 'Roboto', Helvetica;
-}
-.header {
-    background-color: #263b4b;
-    color: rgb(29, 30, 31);
-    
-}
-.navBar-Ulist {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ffffff;
-}
-.navBar-list {
-    float: left;
-}
-.navBar-item {
-    display: block;
-    color: rgb(0, 0, 0);
-    padding: 14px 16px;
-    text-decoration: none;
-    float: left;
-    text-align: center;
-}
-.navBar-item:hover {
-    background-color: rgb(238, 238, 238);
-    color: #000000;
-    opacity: 1;
-}
-#navBar-item-active {
-    background-color: rgb(238, 238, 238);
-    color: #000000;
-}
-body {
-    text-align: center;
-    background: #ffffff;
-    background-size: 400% 400%;
-    color: rgb(49, 49, 49);
-}
-.footer {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ffffff;
-}
+/* Whole file */
+    html {
+        font-family: 'Roboto', Helvetica;
+    }
+
+/* Header */
+    .header {
+        background-color: #263b4b;
+        color: rgb(29, 30, 31);
+        
+    }
+
+/* NavBar */
+    .navBar-Ulist {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #ffffff;
+    }
+    .navBar-list {
+        float: left;
+    }
+    .navBar-item {
+        display: block;
+        color: rgb(0, 0, 0);
+        padding: 14px 16px;
+        text-decoration: none;
+        float: left;
+        text-align: center;
+        opacity: .5;
+    }
+    .navBar-item:hover {
+        background-color: rgb(255, 255, 255);
+        color: #000000;
+    }
+    #navBar-item-active {
+        background-color: rgb(255, 255, 255);
+        color: #000000;
+        opacity: 1;
+    }
+    /* Opacity on hover */
+    .navBar-Ulist:hover >.navBar-list {
+        opacity: .5;
+    }
+    .navBar-Ulist:hover > .navBar-list:hover {
+        opacity: 1;
+    }
+
+/* Body */
+    body {
+        text-align: center;
+        background: #ffffff;
+        background-size: 400% 400%;
+        color: rgb(49, 49, 49);
+    }
+
+/* Footer CSS */
+    .footer-Ulist{
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #ffffff;
+    }
+    .footer-list {
+        float: left;
+    }
+    .footer-item {
+        display: block;
+        color: rgb(0, 0, 0);
+        padding: 14px 16px;
+        text-decoration: none;
+        float: left;
+        text-align: center;
+    }
+        /* Hover on everything but opacity effect */
+    .footer-Ulist:hover >.footer-list {
+        opacity: .5;
+    }
+    .footer-Ulist:hover > .footer-list:hover {
+        opacity: 1;
+    }
