@@ -66,7 +66,20 @@
         background-size: 400% 400%;
         color: rgb(49, 49, 49);
     }
-
+    .facePic-Contain {
+        margin: 20px 20px 0 0;
+        overflow: auto;
+    }
+    .facePic {
+        margin-left: 10%;
+        float: left;
+    }
+    .facePic img {
+        display: block;
+    }
+    .homeContent {
+        margin-right: 200px;
+    }
 /* Footer CSS */
     .footer {
         position: absolute;
@@ -90,7 +103,7 @@
     .footer-item {
         display: block;
         color: rgb(0, 0, 0);
-        padding: 14px 16px;
+        padding: 5px 5px;
         float: center;
     }
         /* Hover on everything but opacity effect */
