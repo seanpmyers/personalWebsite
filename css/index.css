@@ -18,7 +18,7 @@
         text-decoration: none;
         float: left;
         text-align: center;
-        font-size: xx-large;
+        font-size: 250%;
     }
     .navBar-Ulist {
         list-style-type: none;
@@ -76,6 +76,8 @@
     }
     .facePic img {
         display: block;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(50%);
     }
     .homeContent {
         margin-right: 200px;
@@ -88,6 +90,9 @@
         left: 0;
         padding: 1rem;
         text-align: center;
+        -moz-box-shadow: 0em 0em .3em 0em rgb(3, 102, 168);
+        -webkit-box-shadow: 0em 0em .3em 0em rgb(3, 102, 168);
+        box-shadow: 0em 0em .3em 0em rgb(3, 102, 168);
     }
     .footer-Ulist{
         display: inline-block;
