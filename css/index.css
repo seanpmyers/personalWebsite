@@ -26,6 +26,9 @@
         padding: 0;
         overflow: hidden;
         background-color: #ffffff;
+        -moz-box-shadow: 0em 0em .3em 0em rgb(3, 102, 168);
+        -webkit-box-shadow: 0em 0em .3em 0em rgb(3, 102, 168);
+        box-shadow: 0em 0em .3em 0em rgb(3, 102, 168);
     }
     .navBar-list {
         float: right;
@@ -76,8 +79,6 @@
     }
     .facePic img {
         display: block;
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(50%);
     }
     .homeContent {
         margin-right: 200px;
