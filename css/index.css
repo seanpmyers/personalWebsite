@@ -26,9 +26,6 @@
         padding: 0;
         overflow: hidden;
         background-color: #ffffff;
-        -moz-box-shadow: 0em 0em .3em 0em rgb(3, 102, 168);
-        -webkit-box-shadow: 0em 0em .3em 0em rgb(3, 102, 168);
-        box-shadow: 0em 0em .3em 0em rgb(3, 102, 168);
     }
     .navBar-list {
         float: right;
@@ -57,7 +54,10 @@
     .navBar-Ulist:hover > .navBar-list:hover {
         opacity: 1;
     }
-
+    .langIcon {
+        width: 100px;
+        height: 100px;
+    }
 /*Header - Home*/
     .homeH {
         float: 1999px;
@@ -68,6 +68,7 @@
         background: #ffffff;
         background-size: 400% 400%;
         color: rgb(49, 49, 49);
+        float: center;
     }
     .facePic-Contain {
         margin: 20px 20px 0 0;

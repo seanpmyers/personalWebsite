@@ -1,11 +1,12 @@
 
-
-function switchLang (zh){
-    var zh = false;
+zh = false;
+function switchLang (){
     if(!zh) {
-        document.getElementsByClassName('myName').innerHTML = "孟尚朴";
+        document.getElementById('text').innerHTML = "孟尚朴";
+        zh = true;
     }
     else {
-        //document.getElementsByClassName('myName').innerHTML = "Sean Myers";
+        document.getElementById('text').innerHTML = "Sean Myers";
+        zh = false;
     }
 }
