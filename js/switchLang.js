@@ -3,6 +3,7 @@ zh = false;
 function switchLang (){
     if(!zh) {
         document.getElementById('text').innerHTML = "孟尚朴";
+        document.getElementById('text').innerHTML = "博客";
         zh = true;
     }
     else {
