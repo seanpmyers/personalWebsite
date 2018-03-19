@@ -1,24 +1,26 @@
 /* Whole file */
     html {
         font-family: 'Roboto', Helvetica;
+        font-size: 14px;
     }
 
 /* Header */
     .header {
         background-color: #263b4b;
-        color: rgb(29, 30, 31);
-        
+        color: rgb(29, 30, 31);  
     }
 
 /* NavBar */
     .myName {
         display: block;
         color: rgb(0, 0, 0);
-        padding: 14px 16px;
+        padding: 0px 16px;
         text-decoration: none;
         float: left;
         text-align: center;
         font-size: 250%;
+        font-weight: 300;
+        clear: both;
     }
     .navBar-Ulist {
         list-style-type: none;
@@ -26,6 +28,8 @@
         padding: 0;
         overflow: hidden;
         background-color: #ffffff;
+        margin-bottom: 7%;
+        overflow: auto;
     }
     .navBar-list {
         float: right;
@@ -37,6 +41,7 @@
         text-decoration: none;
         text-align: center;
         opacity: .5;
+        overflow: auto;
     }
     .navBar-item:hover {
         background-color: rgb(255, 255, 255);
@@ -54,35 +59,33 @@
     .navBar-Ulist:hover > .navBar-list:hover {
         opacity: 1;
     }
-    .langIcon {
-        width: 100px;
-        height: 100px;
-    }
-/*Header - Home*/
-    .homeH {
-        float: 1999px;
-    }
+
 /* Body */
     body {
-        text-align: center;
         background: #ffffff;
-        background-size: 400% 400%;
         color: rgb(49, 49, 49);
-        float: center;
     }
-    .facePic-Contain {
-        margin: 20px 20px 0 0;
-        overflow: auto;
+    bodyContent {
+        margin: auto;
+        width: 655px;
     }
     .facePic {
-        margin-left: 10%;
+        margin-right: 2.5%;
+        margin-left: 23%;
+        clear:both;
         float: left;
     }
-    .facePic img {
-        display: block;
-    }
     .homeContent {
-        margin-right: 200px;
+        overflow:auto;
+        display: block;
+        text-align: left;
+    }
+    .links {
+        text-decoration: none;
+        color: rgb(49, 49, 49);
+    }
+    .links:hover {
+        color: grey;
     }
 /* Footer CSS */
     .footer {
