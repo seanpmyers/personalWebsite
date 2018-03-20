@@ -4,11 +4,15 @@
         font-size: 14px;
     }
 
+
 /* Header */
     .header {
         background-color: #263b4b;
         color: rgb(29, 30, 31);  
     }
+
+
+
 
 /* NavBar */
     .myName {
@@ -60,6 +64,8 @@
         opacity: 1;
     }
 
+
+
 /* Body */
     body {
         background: #ffffff;
@@ -69,6 +75,7 @@
         margin: auto;
         width: 655px;
     }
+    /* Face Image */
     .facePic {
         margin-right: 2.5%;
         margin-left: 23%;
@@ -87,6 +94,14 @@
     .links:hover {
         color: grey;
     }
+    h1 {
+        text-align: center;
+    }
+
+
+
+
+
 /* Footer CSS */
     .footer {
         position: absolute;
