@@ -1,4 +1,3 @@
-
 zh = false;
 function switchLang (){
     if(!zh) {

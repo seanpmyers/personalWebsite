@@ -16,8 +16,14 @@
 
 /* NavBar */
     .nav {
-        padding: 20px;
         background-color: #ffffff;
+        position: fixed;
+        right: 0;
+        bottom: 1;
+        left: 0;
+        top: 0;
+        padding: .5rem;
+        z-index: 1;
     }
     .myName {
         display: block;
@@ -36,7 +42,6 @@
         padding: 0;
         overflow: hidden;
         background-color: #ffffff;
-        margin-bottom: 7%;
         overflow: auto;
         width: 100%;
     }
@@ -74,8 +79,15 @@
 
 /* Body */
     body {
-        background: #f5f5f6;
+        background: #ffffff;
         color: rgb(49, 49, 49);
+    }
+    .blogBody {
+        background: #f5f5f6;
+    }
+    .blog {
+        position: relative;
+        padding-top: 100px;
     }
     .blog:after {
         content: "";
@@ -90,7 +102,8 @@
      width: 50%;
     }
     bodyContent {
-        margin: auto;
+        position: relative;
+        padding-top: 100px;
         width: 655px;
     }
     /* Face Image */
@@ -99,11 +112,15 @@
         margin-left: 23%;
         clear:both;
         float: left;
+        position: relative;
+        padding-top: 100px;
     }
     .homeContent {
         overflow:auto;
         display: block;
         text-align: left;
+        position: relative;
+        padding-top: 100px;
     }
     .links {
         text-decoration: none;
@@ -114,6 +131,8 @@
     }
     h1 {
         text-align: center;
+        position: relative;
+        padding-top: 100px;
     }
     .aboutContent {
         margin: auto;
@@ -128,7 +147,7 @@
 /* Footer CSS */
     .footer {
         background-color: #ffffff;
-        position: absolute;
+        position: fixed;
         right: 0;
         bottom: 0;
         left: 0;
