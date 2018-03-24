@@ -156,6 +156,7 @@
         -moz-box-shadow: 0em 0em .3em 0em rgb(3, 102, 168);
         -webkit-box-shadow: 0em 0em .3em 0em rgb(3, 102, 168);
         box-shadow: 0em 0em .3em 0em rgb(3, 102, 168);
+        z-index: 1;
     }
     .footer-Ulist{
         display: inline-block;
