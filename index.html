@@ -20,6 +20,7 @@
 
 			<!-- Content related -->
 			<script src="js/switchLang.js"></script>
+			<script src="js/switchIndexBody.js"></script>
 			
 			<!-- Global site tag (gtag.js) - Google Analytics -->
 			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114400072-1"></script>
@@ -55,7 +56,7 @@
 				</li>
 				<!-- Item 2: Language switching button -->
 				<li class="navBar-list">
-					<a onclick="switchLang()" class="navBar-item" id="language">
+					<a onclick="switchLang(); switchLangIndex();" class="navBar-item" id="language">
 						中文/Zh
 					</a>
 				</li>
@@ -101,12 +102,12 @@
 				</div>
 			<!-- Content: Body paragraph -->
 				<div class="bodyContent" >
-					<p class="homeContent" >
+					<p class="homeContent" id="indexP">
 						Welcome to my space on the internet! <br> <br>
 						Download my <strong><a href="content/MyResume-v0.1.pdf" class="links" download>resume</a></strong> here! <br> <br>
-						For general information concerning this site, check out <a href="html/about" class="links"><strong>"About"</strong></a>. <br>
-						You can find write ups on projects I have worked on under <a href="html/projects" class="links"><strong>"Projects"</strong></a>. <br>
-						If you're interested in what I've been up to recently, check out <a href="html/blog" class="links"><strong>"Blogs"</strong></a>. <br><br>
+						For general information concerning this site, check out <a href="html/about" class="links"><strong>About</strong></a>. <br>
+						You can find write ups on projects I have worked on under <a href="html/projects" class="links"><strong>Projects</strong></a>. <br>
+						If you're interested in what I've been up to recently, check out <a href="html/blog" class="links"><strong>Blogs</strong></a>. <br><br>
 						My social media and other links can be found at the bottom of the page. <br>
 						Thanks for stopping by!
 					</p>
