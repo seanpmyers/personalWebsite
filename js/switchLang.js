@@ -1,6 +1,8 @@
-zh = false;
+document.cookie = "zh=false";
 function switchLang (){
-    if(!zh) {
+    var zh = findVal(zh);
+    console.log(zh);
+    if(!(zh === "true")) {
         //Nav bar translations
         document.getElementById('name').innerHTML = "孟尚朴";
         document.getElementById('language').innerHTML = "Eng/英文";
@@ -8,7 +10,8 @@ function switchLang (){
         document.getElementById('projects').innerHTML = "计划";
         document.getElementById('about').innerHTML = "资讯";
         document.getElementById('home').innerHTML = "主页";
-        zh = true;
+        document.cookie = "zh=true";
+        console.log(document.cookie);
     }
     else {
         //Nav bar translations
@@ -18,6 +21,16 @@ function switchLang (){
         document.getElementById('projects').innerHTML = "Projects";
         document.getElementById('about').innerHTML = "About";
         document.getElementById('home').innerHTML = "Home";
-        zh = false;
+        document.cookie = "zh=false";
     }
+    return;
+}
+
+function findVal(zh) {
+zh = ('; ' + document.cookie)
+.split('; ' + "zh" + '=')
+.pop()
+.split(';')
+.shift()
+return zh;
 }
