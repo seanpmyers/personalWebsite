@@ -1,6 +1,6 @@
 function switchLangIndexBody (){
-    var zh = findVal(zh);
-    if(!(zh === "false")) {
+    var zh = window.localStorage.getItem("zh");
+    if(zh === "true") {
         //Nav bar translations
         document.getElementById('indexP').innerHTML 
         = "欢迎来到我自己上网的地方！<br> <br>下载我的 <strong><a href='content/MyResume-v0.1.pdf' class='links' download>简历</a></strong> 这里! <br> <br>"
@@ -22,13 +22,3 @@ function switchLangIndexBody (){
         + "Thanks for stopping by!";
     }
 }
-
-
-function findVal(zh) {
-    zh = ('; ' + document.cookie)
-    .split('; ' + "zh" + '=')
-    .pop()
-    .split(';')
-    .shift()
-    return zh;
-    }

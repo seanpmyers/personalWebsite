@@ -20,6 +20,7 @@
 
 			<!-- Content related -->
 			<script src="../js/switchLang.js"></script>
+			<script src="../js/switchNavbar.js"></script>
 
 			
 			<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -45,55 +46,50 @@
 		</head>
 
 
-
-				<!-- Navbar -->
-				<section class="nav">
-						<ul class="navBar-Ulist">
-						<!-- Item 1: My name -->
-							<li Style="float:lef" class="myName" id="name">
-								Sean Myers
-							</li>
-						<!-- Item 2: Language switching button -->
-							<li class="navBar-list">
-								<a onclick="switchLang()" class="navBar-item" id="language">
-									中文/Zh
-								</a>
-							</li>
-						<!-- Item 3: Blog page link -->
-							<li class="navBar-list">
-								<a href="blog" class="navBar-item" id="navBar-item-active" >
-									<div id="blog">
-										Blog
-									</div>
-								</a>
-							</li>
-						<!-- Item 4: Project page link -->
-							<li class="navBar-list">
-								<a href="projects" class="navBar-item" id="projects">
-									Projects
-								</a>
-							</li>
-						<!-- Item 5: About page link -->
-							<li class="navBar-list">
-								<a href="about" class="navBar-item" id="about">
-									About
-								</a>
-							</li>
-						<!-- Item 6: Home page link -->
-							<li class="navBar-list">
-								<a href="../index" id="home" class="navBar-item" >
-									Home
-								</a>
-							</li>
-						</ul>
-					</section>
-
-
-
-
-
 	<!-- Body-->
-		<body class="blogBody">	
+		<body class="blogBody" onload="switchNavbar();">
+
+			<!-- Navbar -->
+		<section class="nav" onload="switchLang();">
+				<ul class="navBar-Ulist">
+					<!-- Item 1: My name -->
+					<li Style="float:lef" class="myName" id="name">
+						Sean Myers
+					</li>
+					<!-- Item 2: Language switching button -->
+					<li class="navBar-list">
+						<a onclick="switchLang(); switchNavbar();" class="navBar-item" id="language">
+							中文/Zh
+						</a>
+					</li>
+					<!-- Item 3: Blog page link -->
+					<li class="navBar-list">
+						<a href="html/blog" class="navBar-item" id="blog" >
+							Blog
+						</a>
+					</li>
+					<!-- Item 4: Project page link -->
+					<li class="navBar-list">
+						<a href="html/projects" class="navBar-item" id="projects">
+							Projects
+						</a>
+					</li>
+					<!-- Item 5: About page link -->
+					<li class="navBar-list">
+						<a href="html/about" class="navBar-item" id="about">
+							About
+						</a>
+					</li>
+					<!-- Item 6: Home page link -->
+					<li class="navBar-list">
+						<a href="index" id="navBar-item-active" class="navBar-item" >
+							<div id="home" >
+								Home
+							</div>
+						</a>
+					</li>
+				</ul>
+				</section>
 			
 		<!-- Content: Body paragraph -->
 		<script src="../js/generateBlogPost.js"></script>

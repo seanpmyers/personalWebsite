@@ -3,12 +3,9 @@
 	<html lang="en-US">
 
 
-
 	<!-- Head -->
 		<head>
-				<script type="text/javascript" charset="UTF-8" 
-				src="http://chs03.cookie-script.com/s/199541f9d9fa1a70b126e127f62bf161.js">
-				</script>
+			<script>if(!window.localStorage) {window.localStorage.setItem("zh", "false");}</script>
 		<!-- Meta Data -->
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +20,7 @@
 
 			<!-- Content related -->
 			<script src="js/switchLang.js"></script>
+			<script src="js/switchNavbar.js"></script>
 			<script src="js/switchIndexBody.js"></script>
 			
 			<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -50,8 +48,12 @@
 
 
 
-	<!-- Navbar -->
-		<section class="nav">
+
+	<!-- Body-->
+		<body onload="switchNavbar(); switchLangIndexBody();">
+
+		<!-- Navbar -->
+		<section class="nav" onload="switchLang();">
 			<ul class="navBar-Ulist">
 				<!-- Item 1: My name -->
 				<li Style="float:lef" class="myName" id="name">
@@ -59,7 +61,7 @@
 				</li>
 				<!-- Item 2: Language switching button -->
 				<li class="navBar-list">
-					<a onclick="switchLang(); switchLangIndexBody();" class="navBar-item" id="language">
+					<a onclick="switchLang(); switchNavbar(); switchLangIndexBody();" class="navBar-item" id="language">
 						中文/Zh
 					</a>
 				</li>
@@ -90,13 +92,9 @@
 					</a>
 				</li>
 			</ul>
-		</section>
+			</section>
 
 
-
-
-	<!-- Body-->
-		<body onload="switchLangIndexBody();">
 		<!-- Body Content -->
 			<section class="bodyContent">
 			<!-- Content: Face Picture -->
