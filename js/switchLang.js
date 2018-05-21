@@ -1,3 +1,4 @@
+if(!window.localStorage) {window.localStorage.setItem("zh", "false");}
 function switchLang (){
     var zh = window.localStorage.getItem("zh");
     if(!(zh === "true")) {

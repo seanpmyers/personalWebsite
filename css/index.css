@@ -1,7 +1,7 @@
 /* Whole file */
     html {
         font-family: 'Roboto', Helvetica;
-        font-size: 14px;
+        font-size: 1vw;
     }
 
 
@@ -13,24 +13,19 @@
 
 
 
-
 /* NavBar */
     .nav {
         background-color: #ffffff;
-        position: fixed;
-        right: 0;
-        bottom: 1;
-        left: 0;
-        top: 0;
-        padding: .5rem;
+        padding: .20rem;
         z-index: 1;
+        text-align: center;
     }
     .myName {
         display: block;
         color: rgb(0, 0, 0);
         padding: 0px 16px;
         text-decoration: none;
-        float: left;
+        float: center;
         text-align: center;
         font-size: 250%;
         font-weight: 300;
@@ -46,10 +41,10 @@
         width: 100%;
     }
     .navBar-list {
-        float: right;
+        display: inline;
     }
     .navBar-item {
-        display: block;
+        display: inline-block;
         color: rgb(0, 0, 0);
         padding: 14px 16px;
         text-decoration: none;
@@ -103,26 +98,23 @@
     }
     bodyContent {
         position: relative;
-        padding-top: 100px;
-        width: 655px;
     }
     /* Face Image */
     .facePic {
-        width: 250px;
-        height: 250px;
-        margin-right: 2.5%;
-        margin-left: 23%;
-        clear:both;
+        max-width: 15%;
+        padding-top: 2vw;
+        height: auto;
         float: left;
         position: relative;
-        padding-top: 100px;
+        margin-right: 2vw;
+        margin-left: 25%;
     }
     .homeContent {
-        overflow:auto;
+        padding-top: 2vw;
         display: block;
         text-align: left;
         position: relative;
-        padding-top: 100px;
+        font-size: .85vw;
     }
     .links {
         text-decoration: none;
@@ -155,9 +147,6 @@
         left: 0;
         padding: .5rem;
         text-align: center;
-        -moz-box-shadow: 0em 0em .3em 0em rgb(3, 102, 168);
-        -webkit-box-shadow: 0em 0em .3em 0em rgb(3, 102, 168);
-        box-shadow: 0em 0em .3em 0em rgb(3, 102, 168);
         z-index: 1;
     }
     .footer-Ulist{
@@ -177,7 +166,7 @@
         padding: 5px 5px;
         float: center;
     }
-        /* Hover on everything but opacity effect */
+/* Hover on everything but opacity effect */
     .footer-Ulist:hover >.footer-list {
         opacity: .5;
     }

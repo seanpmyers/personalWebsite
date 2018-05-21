@@ -6,6 +6,8 @@
 
 	<!-- Head -->
 		<head>
+		<!-- Page Viewport: -->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Meta Data -->
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,48 +50,51 @@
 
 	<!-- Body-->
 		<body onload="switchNavbar();">
+
+			<section class="nav" onload="switchLang();">
+			<!-- Item 1: My name -->
+				<li Style="float:lef" class="myName" id="name">
+						Sean Myers
+				</li>
+			</section>
 			
 			<!-- Navbar -->
-		<section class="nav" onload="switchLang();">
+			<section class="nav" onload="switchLang();">
 				<ul class="navBar-Ulist">
-					<!-- Item 1: My name -->
-					<li Style="float:lef" class="myName" id="name">
-						Sean Myers
-					</li>
-					<!-- Item 2: Language switching button -->
+					<!-- Item 1: Home page link -->
 					<li class="navBar-list">
-						<a onclick="switchLang(); switchNavbar();" class="navBar-item" id="language">
-							中文/Zh
+						<a href="index" class="navBar-item" id="home">
+							Home
 						</a>
 					</li>
-					<!-- Item 3: Blog page link -->
+					<!-- Item 2: Blog page link -->
 					<li class="navBar-list">
 						<a href="html/blog" class="navBar-item" id="blog" >
 							Blog
 						</a>
 					</li>
-					<!-- Item 4: Project page link -->
+					<!-- Item 3: Project page link -->
 					<li class="navBar-list">
-						<a href="html/projects" class="navBar-item" id="projects">
-							Projects
+						<a href="html/projects" class="navBar-item" id="navBar-item-active">
+							<div id="projects">
+								Projects
+							</div>
 						</a>
 					</li>
-					<!-- Item 5: About page link -->
+					<!-- Item 4: About page link -->
 					<li class="navBar-list">
 						<a href="html/about" class="navBar-item" id="about">
 							About
 						</a>
 					</li>
-					<!-- Item 6: Home page link -->
+					<!-- Item 5: Language switching button -->
 					<li class="navBar-list">
-						<a href="index" id="navBar-item-active" class="navBar-item" >
-							<div id="home" >
-								Home
-							</div>
+						<a onclick="switchLang(); switchNavbar();" class="navBar-item" id="language">
+							中文/Zh
 						</a>
 					</li>
 				</ul>
-				</section>
+			</section>
 
 		<!-- Content: Body paragraph -->
 			<div class="bodyContent" >
