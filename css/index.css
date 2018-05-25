@@ -1,175 +1,207 @@
 /* Whole file */
-    html {
-        font-family: 'Roboto', Helvetica;
-        font-size: 1vw;
-    }
 
+html {
+  font-family: 'Roboto', Helvetica;
+  font-size: 1.5vh;
+}
 
 /* Header */
-    .header {
-        background-color: #263b4b;
-        color: rgb(29, 30, 31);  
-    }
 
-
+.header {
+  background-color: #263b4b;
+  color: rgb(29, 30, 31);
+}
 
 /* NavBar */
-    .nav {
-        background-color: #ffffff;
-        padding: .20rem;
-        z-index: 1;
-        text-align: center;
-    }
-    .myName {
-        display: block;
-        color: rgb(0, 0, 0);
-        padding: 0px 16px;
-        text-decoration: none;
-        float: center;
-        text-align: center;
-        font-size: 250%;
-        font-weight: 300;
-        clear: both;
-    }
-    .navBar-Ulist {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #ffffff;
-        overflow: auto;
-        width: 100%;
-    }
-    .navBar-list {
-        display: inline;
-    }
-    .navBar-item {
-        display: inline-block;
-        color: rgb(0, 0, 0);
-        padding: 14px 16px;
-        text-decoration: none;
-        text-align: center;
-        opacity: .5;
-        overflow: auto;
-        cursor:pointer;
-    }
-    .navBar-item:hover {
-        background-color: rgb(255, 255, 255);
-        color: #000000;
-    }
-    #navBar-item-active {
-        background-color: rgb(255, 255, 255);
-        color: #000000;
-        opacity: 1;
-    }
-    /* Opacity on hover */
-    .navBar-Ulist:hover >.navBar-list {
-        opacity: .5;
-    }
-    .navBar-Ulist:hover > .navBar-list:hover {
-        opacity: 1;
-    }
 
+.nav {
+  background-color: #ffffff;
+  padding: .20rem;
+  z-index: 1;
+  text-align: center;
+}
 
+.myName {
+  display: block;
+  color: rgb(0, 0, 0);
+  padding: 0px 16px;
+  text-decoration: none;
+  float: center;
+  text-align: center;
+  font-size: 250%;
+  font-weight: 300;
+  clear: both;
+}
+
+.navBar-Ulist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  overflow: auto;
+  width: 100%;
+}
+
+.navBar-list {
+  display: inline;
+}
+
+.navBar-item {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+  opacity: .5;
+  overflow: auto;
+  cursor: pointer;
+}
+
+.navBar-item:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
+#navBar-item-active {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  opacity: 1;
+}
+
+/* Opacity on hover */
+
+.navBar-Ulist:hover>.navBar-list {
+  opacity: .5;
+}
+
+.navBar-Ulist:hover>.navBar-list:hover {
+  opacity: 1;
+}
 
 /* Body */
-    body {
-        background: #ffffff;
-        color: rgb(49, 49, 49);
-    }
-    .blogBody {
-        background: #f5f5f6;
-    }
-    .blog {
-        position: relative;
-        padding-top: 100px;
-    }
-    .blog:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    .card {
-     background-color: white;
-     padding: 20px;
-     margin-top: 20px;
-     margin-left: 25%;
-     width: 50%;
-    }
-    bodyContent {
-        position: relative;
-    }
-    /* Face Image */
-    .facePic {
-        max-width: 15%;
-        padding-top: 2vw;
-        height: auto;
-        float: left;
-        position: relative;
-        margin-right: 2vw;
-        margin-left: 25%;
-    }
-    .homeContent {
-        padding-top: 2vw;
-        display: block;
-        text-align: left;
-        position: relative;
-        font-size: .85vw;
-    }
-    .links {
-        text-decoration: none;
-        color: rgb(49, 49, 49);
-    }
-    .links:hover {
-        color: grey;
-    }
-    h1 {
-        text-align: center;
-        position: relative;
-        padding-top: 100px;
-    }
-    .aboutContent {
-        margin: auto;
-        width: 50%;
-        padding: 10px;
-        text-align: left;
-    }
 
+body {
+  background: #ffffff;
+  color: rgb(49, 49, 49);
+}
 
+.blogBody {
+  background: #f5f5f6;
+}
 
+.blog {
+  position: relative;
+  padding-top: 100px;
+}
+
+.blog:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 25%;
+  width: 50%;
+}
+
+bodyContent {
+  position: relative;
+}
+
+/* Face Image */
+
+.facePic {
+  max-width: 200px;
+  width: 100%;
+  padding-top: 2vw;
+  height: auto;
+  float: left;
+  position: relative;
+  margin-right: 2vw;
+  margin-left: 25%;
+  padding-bottom: 400px;
+}
+
+.homeContent {
+  padding-top: 2vw;
+  flex-wrap: inherit;
+  text-align: left;
+  position: relative;
+  font-size: 1.17vh;
+}
+
+.links {
+  text-decoration: none;
+  color: rgb(49, 49, 49);
+}
+
+.links:hover {
+  color: grey;
+}
+
+h1 {
+  text-align: center;
+  position: relative;
+  padding-top: 100px;
+}
+
+.aboutContent {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: left;
+}
 
 /* Footer CSS */
-    .footer {
-        background-color: #ffffff;
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        padding: .5rem;
-        text-align: center;
-        z-index: 1;
-    }
-    .footer-Ulist{
-        display: inline-block;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #ffffff;
-    }
-    .footer-list {
-        float: left;
-    }
-    .footer-item {
-        display: block;
-        color: rgb(0, 0, 0);
-        padding: 5px 5px;
-        float: center;
-    }
+
+.footer {
+  background-color: #ffffff;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: .5rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.footer-Ulist {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.footer-list {
+  float: left;
+}
+
+.footer-item {
+  
+
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+  opacity: .5;
+  overflow: auto;
+  cursor: pointer;
+}
+
 /* Hover on everything but opacity effect */
-    .footer-Ulist:hover >.footer-list {
-        opacity: .5;
-    }
-    .footer-Ulist:hover > .footer-list:hover {
-        opacity: 1;
-    }
+
+.footer-Ulist:hover>.footer-list {
+  opacity: .5;
+}
+
+.footer-Ulist:hover>.footer-list:hover {
+  opacity: 1;
+}

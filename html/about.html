@@ -1,155 +1,158 @@
 <!DOCTYPE html>
 <!-- HTML -->
-	<html lang="en-US">
+<html lang="en-US">
 
 
 
-	<!-- Head -->
-		<head>
-		<!-- Page Viewport: -->
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- Meta Data -->
-			<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Head -->
 
-		<!-- Style related links -->
-			<link rel="stylesheet" href="../css/index.css">
-			<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
-			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<head>
+	<!-- Page Viewport: -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Meta Data -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-		<!-- Scripts -->
+	<!-- Style related links -->
+	<link rel="stylesheet" href="../css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 
-			<!-- Content related -->
-			<script src="../js/switchLang.js"></script>
-			<script src="../js/switchNavbar.js"></script>
-			
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114400072-1"></script>
-			<script>
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
+	<!-- Scripts -->
 
-				gtag('config', 'UA-114400072-1');
-			</script>
+	<!-- Content related -->
+	<script src="../js/switchLang.js"></script>
+	<script src="../js/switchNavbar.js"></script>
 
-			<!-- Tag for facebook open graph - link's thumbnail-->
-			<html xmlns="http://www.w3.org/1999/xhtml"
-			xmlns:og="http://ogp.me/ns#">
-			<meta property="og:title" content="Sean Myers"/>
-			<meta property="og:type" content="website" />
-			<meta property="og:image" content="favicon.ico" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114400072-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-		<!-- Title -->
-			<title>Sean Myers - About</title>
+		gtag('config', 'UA-114400072-1');
+	</script>
 
-		</head>
+	<!-- Tag for facebook open graph - link's thumbnail-->
+	<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#">
+	<meta property="og:title" content="Sean Myers" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="favicon.ico" />
 
+	<!-- Title -->
+	<title>Sean Myers - About</title>
 
-	<!-- Body-->
-	<body onload="switchNavbar();">
-
-		<section class="nav" onload="switchLang();">
-				<!-- Item 1: My name -->
-				<li Style="float:lef" class="myName" id="name">
-						Sean Myers
-					</li>
-			</section>
-		
-		<!-- Navbar -->
-		<section class="nav" onload="switchLang();">
-				<ul class="navBar-Ulist">
-					<!-- Item 1: Home page link -->
-					<li class="navBar-list">
-						<a href="../index" id="" class="navBar-item" >
-							<div id="home" >
-								Home
-							</div>
-						</a>
-					</li>
-					<!-- Item 2: Blog page link -->
-					<li class="navBar-list">
-						<a href="blog" class="navBar-item" id="blog" >
-							Blog
-						</a>
-					</li>
-					<!-- Item 3: Project page link -->
-					<li class="navBar-list">
-						<a href="projects" class="navBar-item" id="projects">
-							Projects
-						</a>
-					</li>
-					<!-- Item 4: About page link -->
-					<li class="navBar-list">
-						<a href="about" class="navBar-item" id="navBar-item-active">
-							<div id="about">
-								About
-							</div>
-						</a>
-					</li>
-					<!-- Item 5: Language switching button -->
-					<li class="navBar-list">
-						<a onclick="switchLang(); switchNavbar();" class="navBar-item" id="language">
-							中文/Zh
-						</a>
-					</li>
-				</ul>
-				</section>
+</head>
 
 
-		<!-- Content: Body paragraph -->
-			<div>
-				<h1>
-					About this site
-				</h1>
-				
-				<p class="aboutContent">
-					Here is some general information about the current version of this website.
-					<br>
-					For a more detailed look refer to my write-up under the projects page (currently unavailable).
-					<br>
-					My website's code can be found here: 
-					<a href="https://github.com/seanpmyers/personalWebsite" class="links" target="_blank">
-						https://github.com/seanpmyers/personalWebsite
-					</a>.
-					<br> <br>
-					The version you are currently viewing consists of HTML, CSS, and JavaScript.
-					<br>
-					Currently the site is static, with all files being hosted using AmazonWebServices(AWS).
-					AWS is also being used for routing and creation/deployment of ssl certificates.
-					<br> <br>
-					
-				</p>
-			</div>
+<!-- Body-->
+
+<body onload="switchNavbar();">
+
+	<section class="nav" onload="switchLang();">
+		<!-- Item 1: My name -->
+		<li Style="float:lef" class="myName" id="name">
+			Sean Myers
+		</li>
+	</section>
+
+	<!-- Navbar -->
+	<section class="nav" onload="switchLang();">
+		<ul class="navBar-Ulist">
+			<!-- Item 1: Home page link -->
+			<li class="navBar-list">
+				<a href="../index" id="" class="navBar-item">
+					<div id="home">
+						Home
+					</div>
+				</a>
+			</li>
+			<!-- Item 2: Blog page link -->
+			<li class="navBar-list">
+				<a href="blog" class="navBar-item" id="blog">
+					Blog
+				</a>
+			</li>
+			<!-- Item 3: Project page link -->
+			<li class="navBar-list">
+				<a href="projects" class="navBar-item" id="projects">
+					Projects
+				</a>
+			</li>
+			<!-- Item 4: About page link -->
+			<li class="navBar-list">
+				<a href="about" class="navBar-item" id="navBar-item-active">
+					<div id="about">
+						About
+					</div>
+				</a>
+			</li>
+			<!-- Item 5: Language switching button -->
+			<li class="navBar-list">
+				<a onclick="switchLang(); switchNavbar();" class="navBar-item" id="language">
+					中文/Zh
+				</a>
+			</li>
+		</ul>
+	</section>
+
+
+	<!-- Content: Body paragraph -->
+	<div>
+		<h1>
+			About this site
+		</h1>
+
+		<p class="aboutContent">
+			Here is some general information about the current version of this website.
+			<br> For a more detailed look refer to my write-up under the projects page (currently unavailable).
+			<br> My website's code can be found here:
+			<a href="https://github.com/seanpmyers/personalWebsite" class="links" target="_blank">
+				https://github.com/seanpmyers/personalWebsite
+			</a>.
+			<br>
+			<br> The version you are currently viewing consists of HTML, CSS, and JavaScript.
+			<br> Currently the site is static, with all files being hosted using AmazonWebServices(AWS). AWS is also being used for routing
+			and creation/deployment of ssl certificates.
+			<br>
+			<br>
+
+		</p>
+	</div>
+
+	<!--Footer Links-->
+	<section class="footer">
+		<ul class="footer-Ulist">
+			<li class="footer-list">
+				<a href="https://www.facebook.com/mengseanpu" target="_blank" class="footer-item" id="Facebook">
+					Facebook
+				</a>
+			</li>
+			<li class="footer-list">
+				<a href="https://twitter.com/spmyers22" target="_blank" class="footer-item" id="Twitter">
+					Twitter
+				</a>
+			</li>
+			<li class="footer-list">
+				<a href="https://www.linkedin.com/in/spmyers/" target="_blank" class="footer-item" id="Linkedin">
+					Linkedin
+				</a>
+			</li>
+			<li class="footer-list">
+				<a href="https://github.com/seanpmyers" target="_blank" class="footer-item" id="Github">
+					Github
+				</a>
+			</li>
+		</ul>
+	</section>
 
 
 
+</body>
 
-
-		</body>
-
-				<!--Footer Links-->
-				<section class="footer">
-						<ul class="footer-Ulist">
-							<li class="footer-list">
-								<a href="https://www.facebook.com/mengseanpu" target="_blank" class="footer-item">
-									<img src="../content/svg/facebook.svg" height="30" width="30">
-								</a>
-							</li>
-							<li class="footer-list">
-								<a href="https://www.linkedin.com/in/spmyers/" target="_blank" class="footer-item">
-									<img src="../content/svg/linkedin.svg" height="30" width="30">
-								</a>
-							</li>
-							<li class="footer-list">
-								<a href="https://github.com/seanpmyers" target="_blank" class="footer-item">
-									<img src="../content/svg/github.svg" height="30" width="30">
-								</a>
-							</li>
-						</ul>
-					</section>
-	
-	</html>
+</html>
 
 </DOCTYPE>
