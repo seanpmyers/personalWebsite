@@ -14,17 +14,9 @@ html {
 
 /* NavBar */
 
-.nav {
-  background-color: #ffffff;
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 47.5px;
-  text-align: center;
-  z-index: 1;
-}
-
 .nav-name {
+  padding-top: 10px;
+  display: block;
   background-color: #ffffff;
   position: fixed;
   right: 0px;
@@ -34,16 +26,29 @@ html {
   z-index: 1;
 }
 
+
 .myName {
-  display: block;
+  display: inline-block;
   color: rgb(0, 0, 0);
   text-decoration: none;
-  float: center;
   text-align: center;
   font-size: 250%;
-  font-weight: 300;
   clear: both;
+  margin: auto;
 }
+
+
+.nav {
+  background-color: #ffffff;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 57.5px;
+  text-align: center;
+  z-index: 1;
+}
+
+
 
 .navBar-Ulist {
   display: inline-block;
@@ -120,30 +125,60 @@ body {
   width: 50%;
 }
 
-bodyContent {
-  position: relative;
+.center {
+  display: block;
+  margin: 0 auto;
+  margin-top: 200px;
+
 }
+.center2 {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+/*
+bodyContent {
+
+}
+*/
 
 /* Face Image */
 
 .facePic {
-  max-width: 200px;
+  /* Keep picture to the left of text */
+  display: inline-block;
   width: 100%;
-  padding-top: 150px;
+  max-width: 200px;
   height: auto;
-  float: left;
-  position: relative;
-  margin-right: 2vw;
-  margin-left: 25%;
-  padding-bottom: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
 }
 
 .homeContent {
-  margin: auto;
-  padding-top: 150px;
-  text-align: left;
-  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  padding-top: 50px;
   font-size: 14px;
+  text-align: center;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .facePic {
+    width: 80%;
+    padding: 0;
+  }
+  .homeContent {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .facePic, .homeContent {
+    width: 100%;
+  }
 }
 
 .links {
@@ -166,6 +201,22 @@ bodyContent {
   width: 50%;
   padding: 10px;
   text-align: left;
+}
+
+
+.grid-container {
+  margin-top: 300px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
 /* Footer CSS */

@@ -19,6 +19,6 @@ function switchLangIndexBody (){
         + "You can find write ups on projects I have worked on under <a href='html/projects' class='links'><strong>Projects</strong></a>. <br>"
         + "If you're interested in what I've been up to recently, check out <a href='html/blog' class='links'><strong>Blogs</strong></a>. <br><br>"
         + "My social media and other links can be found at the bottom of the page. <br>"
-        + "Thanks for stopping by!";
+        + "<br>Thanks for stopping by!";
     }
 }
