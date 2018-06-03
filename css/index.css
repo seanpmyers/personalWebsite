@@ -184,30 +184,31 @@ bodyContent {
   text-align: left;
 }
 
-.project-canvas {
-  display: inline-block;
-  margin: 0 auto;
-  width: calc(100% * (1/2) - 10px - 1px);
+.project {
+  padding: 20px;
+  overflow: hidden;
 }
 
-.project-list {
-  list-style-type: none;
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  width: 100%;
+.project-canvas {
+  max-width: 989px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  /*background-color: #2196F3; show the background */
 }
 
 .project-item {
-  display: inline-block;
-  max-width: 600px;
-  width: 394px;
-  height: auto;
-  padding: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 5px;
-  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .project-item:hover {
@@ -215,25 +216,36 @@ bodyContent {
 }
 
 .project-thumbnail {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
+  width: 100%;
+  height: 200px;
+  object-fit: scale-down;
 }
 
 .project-image {
-  width: inherit;
-  height: inherit;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
   border-radius: 5px 5px 0 0;
 }
 
 .project-date {
   text-align: left;
-
+  font-size: 14px;
+  color: rgba(66,66,66,.7);
 }
 
 .project-title {
   text-align: left;
+  font-size: 30px;
+}
+
+.project-title a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.project-title a:hover {
+  opacity: .5;
 }
 
 .project-description {
@@ -245,6 +257,7 @@ bodyContent {
 
 .project-blog_link {
   text-align: left;
+  font-size: 14px;
 }
 
 .project-blog_link a {
@@ -254,6 +267,7 @@ bodyContent {
 
 .project-blog_link a:hover {
   opacity: .5;
+  cursor: pointer;
 }
 
 /* Footer CSS */
@@ -314,11 +328,13 @@ bodyContent {
     width: 100%;
   }
 
-  .project-item {
-    width: 580px;
-    height: 534px;
+  .project-grid {
+    grid-template-columns: auto;
   }
 
+  .project {
+    padding: 30px;
+  }
 }
 
 @media only screen and (max-width:500px) {
