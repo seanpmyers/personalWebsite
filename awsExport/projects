@@ -102,49 +102,78 @@
 	</section>
 
 	<!-- Content: Projects -->
-	<div class="bodyContent">
-		<div class="center">
-			<div class="center2">
-				<ul class="project-list">
-					<li class="project-item">
-						<div class="project-thumbnail">
+	<div class="project">
+		<div class="project-canvas">
+			<div class="project-grid">
+				<div class="project-item">
+					<div class="project-thumbnail">
+						<a href="#">
 							<img src="../content/img/blog-personalwebsite.png" class="project-image">
-						</div>
-						<div class="project-date">
-							June 3, 2018
-						</div>
-						<h2 class="project-title">
+						</a>
+					</div>
+					<p class="project-date">
+						June 3, 2018
+					</p>
+					<p class="project-title">
+						<a href="#">
 							Personal Website
-						</h2>
-						<p class="project-description">
-							A website I built from scratch to gain experience and to consolidate my online activity.
-						</p>
-						<p class="project-blog_link">
-							<a href="#">
-								Read more →
-							</a>
-						</p>
-					</li>
-					<li class="project-item">
-						<div class="project-thumbnail">
+						</a>
+					</p>
+					<p class="project-description">
+						A website I made from scratch learn about front end development and as a way to consolidate my online activities.
+					</p>
+					<p class="project-blog_link">
+						<a>
+							Read more →
+						</a>
+					</p>
+				</div>
+				<div class="project-item">
+					<div class="project-thumbnail">
+						<a href="#">
 							<img src="../content/img/blog-auxCord.png" class="project-image">
-						</div>
-						<div class="project-date">
-								June 3, 2018
-						</div>
-						<h2 class="project-title">
+						</a>
+					</div>
+					<p class="project-date">
+						June 3, 2018
+					</p>
+					<p class="project-title">
+						<a href="#">
 							auxCord
-						</h2>
-						<p class="project-description">
-							A web app that uses the Spotify API to build playlists using a composite of two user's Spotify data.
-						</p>
-						<p class="project-blog_link">
-							<a href="#">
-								Read more →
-							</a>
-						</p>
-					</li>
-				</ul>
+						</a>
+					</p>
+					<p class="project-description">
+						My contribution to the web app my friends and I made during Clemson's 2018 hackathon.
+					</p>
+					<p class="project-blog_link">
+						<a>
+							Read more →
+						</a>
+					</p>
+				</div>
+				<div class="project-item">
+					<div class="project-thumbnail">
+						<a href="#">
+							<img src="#" class="project-image">
+						</a>
+					</div>
+					<p class="project-date">
+						Month Day, Year
+					</p>
+					<p class="project-title">
+						<a href="#">
+							Project Title
+						</a>
+					</p>
+					<p class="project-description">
+						A description explaining what the project is about.
+					</p>
+					<p class="project-blog_link">
+						<a>
+							Read more →
+						</a>
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>

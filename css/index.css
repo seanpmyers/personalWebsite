@@ -174,14 +174,19 @@ bodyContent {
 .aboutHeading {
   text-align: center;
   position: relative;
-  padding-top: 100px;
 }
 
 .aboutContent {
   margin: auto;
-  width: 50%;
-  padding: 10px;
+  max-width: 589px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  margin: 0 auto;
   text-align: left;
+}
+
+.about-text {
+  font-size: 14px;
 }
 
 .project {

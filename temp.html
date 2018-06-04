@@ -1,0 +1,44 @@
+<section class="nav-name" onload="switchLang();">
+		<!-- Item 1: My name -->
+		<li Style="float:lef" class="myName" id="name">
+			Sean Myers
+		</li>
+	</section>
+
+	<!-- Navbar -->
+	<section class="nav" onload="switchLang();">
+		<ul class="navBar-Ulist">
+			<!-- Item 1: Home page link -->
+			<li class="navBar-list">
+				<a href="index" class="navBar-item" id="navBar-item-active">
+					<div id="home">
+						Home
+					</div>
+				</a>
+			</li>
+			<!-- Item 2: Blog page link -->
+			<li class="navBar-list">
+				<a href="html/blog" class="navBar-item" id="blog">
+					Blog
+				</a>
+			</li>
+			<!-- Item 3: Project page link -->
+			<li class="navBar-list">
+				<a href="html/projects" class="navBar-item" id="projects">
+					Projects
+				</a>
+			</li>
+			<!-- Item 4: About page link -->
+			<li class="navBar-list">
+				<a href="html/about" class="navBar-item" id="about">
+					About
+				</a>
+			</li>
+			<!-- Item 5: Language switching button -->
+			<li class="navBar-list">
+				<a onclick="switchLang(); switchNavbar(); switchLangIndexBody();" class="navBar-item" id="language">
+					中文/Zh
+				</a>
+			</li>
+		</ul>
+	</section>
