@@ -107,7 +107,7 @@
 			<div class="project-grid">
 				<div class="project-item">
 					<div class="project-thumbnail">
-						<a href="#">
+						<a href="blog-posts/blog-personalWebsite">
 							<img src="../content/img/blog-personalwebsite.png" class="project-image">
 						</a>
 					</div>
@@ -120,7 +120,7 @@
 						</a>
 					</p>
 					<p class="project-description">
-						A website I made from scratch learn about front end development and as a way to consolidate my online activities.
+						A website I made from scratch to learn about front end development and as a way to consolidate my online activities.
 					</p>
 					<p class="project-blog_link">
 						<a>
@@ -151,6 +151,7 @@
 						</a>
 					</p>
 				</div>
+				<!--
 				<div class="project-item">
 					<div class="project-thumbnail">
 						<a href="blog-posts/blog-auxCord">
@@ -174,6 +175,7 @@
 						</a>
 					</p>
 				</div>
+			-->
 			</div>
 		</div>
 	</div>

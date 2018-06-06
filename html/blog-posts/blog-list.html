@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- HTML -->
+<html lang="en-US">
+
+
+
+<!-- Head -->
+
+<head>
+  <!-- Page Viewport: -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta Data -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Sean Myers">
+  <meta name="description" content="Personal Website of Sean Myers">
+  <meta name="keywords" content="Sean, Myers, Sean Myers, Personal Website, Hilton Head, Clemson, SC">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Style related links -->
+  <link rel="stylesheet" href="../../css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+  <!-- Scripts -->
+
+  <!-- Content related -->
+  <script src="../../js/switchLang.js"></script>
+  <script src="../../js/switchNavbar.js"></script>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114400072-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114400072-1');
+  </script>
+
+  <!-- Tag for facebook open graph - link's thumbnail-->
+  <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#">
+  <meta property="og:title" content="Sean Myers" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="favicon.ico" />
+
+  <!-- Title -->
+  <title>Sean Myers - Blog</title>
+
+</head>
+
+
+<!-- Body-->
+
+<body class="blogBody" onload="switchNavbar();">
+
+  <section class="nav-name" onload="switchLang();">
+    <!-- Item 1: My name -->
+    <li Style="float:lef" class="myName" id="name">
+      Sean Myers
+    </li>
+  </section>
+
+  <!-- Navbar -->
+  <section class="nav" onload="switchLang();">
+    <ul class="navBar-Ulist">
+      <!-- Item 1: Home page link -->
+      <li class="navBar-list">
+        <a href="../../index" class="navBar-item" id="home">
+          Home
+        </a>
+      </li>
+      <!-- Item 3: Blog page link -->
+      <li class="navBar-list">
+        <a href="../blog" class="navBar-item" id="navBar-item-active">
+          <div id="blog">
+            Blog
+          </div>
+        </a>
+      </li>
+      <!-- Item 4: Project page link -->
+      <li class="navBar-list">
+        <a href="../projects" class="navBar-item" id="projects">
+          Projects
+        </a>
+      </li>
+      <!-- Item 5: About page link -->
+      <li class="navBar-list">
+        <a href="../about" class="navBar-item" id="about">
+          About
+        </a>
+      </li>
+      <!-- Item 2: Language switching button -->
+      <li class="navBar-list">
+        <a onclick="switchLang(); switchNavbar();" class="navBar-item" id="language">
+          中文/Zh
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Content: Body paragraph -->
+  <div class="blog">
+    <div class="blog-canvas">
+      <div class="blog-grid">
+        <div class="blog-item">
+          <h1 class="blog-title">
+            List of Blog Posts
+          </h1>
+          <h2 class="blog-date">
+            Last updated June 3rd, 2018
+          </h2>
+          <div style="text-align: center">
+            <p class="blog-paragraph" style="display: inline-block; text-align: left">
+              <a href="blog-personalWebsite" id="blog-link">
+                1. Blog Post #2: My Personal Website - June 3rd, 2018
+              </a>
+              <br>
+              <a href="blog-auxCord" id="blog-link">
+                2. Blog Post #1: auxCord - June 3rd, 2018
+              </a>
+              <br>
+              <br>
+              End of List.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Footer Links-->
+    <section class="footer">
+      <ul class="footer-Ulist">
+        <li class="footer-list">
+          <a href="https://www.facebook.com/spmyers22" target="_blank" class="footer-item" id="Facebook">
+            Facebook
+          </a>
+        </li>
+        <li class="footer-list">
+          <a href="https://twitter.com/spmyers22" target="_blank" class="footer-item" id="Twitter">
+            Twitter
+          </a>
+        </li>
+        <li class="footer-list">
+          <a href="https://www.linkedin.com/in/spmyers/" target="_blank" class="footer-item" id="Linkedin">
+            Linkedin
+          </a>
+        </li>
+        <li class="footer-list">
+          <a href="https://github.com/seanpmyers" target="_blank" class="footer-item" id="Github">
+            Github
+          </a>
+        </li>
+      </ul>
+    </section>
+
+</body>
+
+</html>
+
+
+
+</DOCTYPE>

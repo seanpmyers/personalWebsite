@@ -177,6 +177,15 @@ body {
   font-size: 15px;
 }
 
+#blog-link {
+
+  color: #000000;
+}
+
+#blog-link:hover {
+  opacity: .5;
+}
+
 .blog-image {
   display: block;
   object-fit: scale-down;
