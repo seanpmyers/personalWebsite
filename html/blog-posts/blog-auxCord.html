@@ -18,16 +18,16 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<!-- Style related links -->
-	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../../css/index.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
 
 	<!-- Scripts -->
 
 	<!-- Content related -->
-	<script src="../js/switchLang.js"></script>
-	<script src="../js/switchNavbar.js"></script>
+	<script src="../../js/switchLang.js"></script>
+	<script src="../../js/switchNavbar.js"></script>
 
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -47,14 +47,14 @@
 	<meta property="og:image" content="favicon.ico" />
 
 	<!-- Title -->
-	<title>Sean Myers - Projects</title>
+	<title>Sean Myers - Blog</title>
 
 </head>
 
 
 <!-- Body-->
 
-<body onload="switchNavbar();">
+<body class="blogBody" onload="switchNavbar();">
 
 	<section class="nav-name" onload="switchLang();">
 		<!-- Item 1: My name -->
@@ -68,31 +68,31 @@
 		<ul class="navBar-Ulist">
 			<!-- Item 1: Home page link -->
 			<li class="navBar-list">
-				<a href="../index" class="navBar-item" id="home">
+				<a href="../../index" class="navBar-item" id="home">
 					Home
 				</a>
 			</li>
-			<!-- Item 2: Blog page link -->
+			<!-- Item 3: Blog page link -->
 			<li class="navBar-list">
-				<a href="blog" class="navBar-item" id="blog">
-					Blog
-				</a>
-			</li>
-			<!-- Item 3: Project page link -->
-			<li class="navBar-list">
-				<a href="projects" class="navBar-item" id="navBar-item-active">
-					<div id="projects">
-						Projects
+				<a href="../blog" class="navBar-item" id="navBar-item-active">
+					<div id="blog">
+						Blog
 					</div>
 				</a>
 			</li>
-			<!-- Item 4: About page link -->
+			<!-- Item 4: Project page link -->
 			<li class="navBar-list">
-				<a href="about" class="navBar-item" id="about">
+				<a href="../projects" class="navBar-item" id="projects">
+					Projects
+				</a>
+			</li>
+			<!-- Item 5: About page link -->
+			<li class="navBar-list">
+				<a href="../about" class="navBar-item" id="about">
 					About
 				</a>
 			</li>
-			<!-- Item 5: Language switching button -->
+			<!-- Item 2: Language switching button -->
 			<li class="navBar-list">
 				<a onclick="switchLang(); switchNavbar();" class="navBar-item" id="language">
 					中文/Zh
@@ -101,82 +101,44 @@
 		</ul>
 	</section>
 
-	<!-- Content: Projects -->
-	<div class="project">
-		<div class="project-canvas">
-			<div class="project-grid">
-				<div class="project-item">
-					<div class="project-thumbnail">
-						<a href="#">
-							<img src="../content/img/blog-personalwebsite.png" class="project-image">
+	<!-- Content: Body paragraph -->
+	<div class="blog">
+		<div class="blog-canvas">
+			<div class="blog-grid">
+				<div class="blog-item">
+					<h1 class="blog-title">
+						auxCord
+					</h1>
+					<h2 class="blog-date">
+						June 3rd, 2018
+					</h2>
+					<p class="blog-paragraph">
+						"Deciding what music to listen to can be a challenge. Its even more difficult to determine what to listen to when you are
+						forced to subject those around you to your personal music taste. auxCord strives to fix that problem by analyzing the
+						musical tastes of you and your friends to build unique playlists that contain music that both of you are likely to
+						enjoy." - Christian Steinmetz
+					</p>
+					<h2 class="blog-subtitle2">
+						Try the app live here: 
+						<a href="http://auxcord.io">
+							http://auxCord.io
 						</a>
-					</div>
-					<p class="project-date">
-						June 3, 2018
+						!
+					</h2>
+					<img src="../../content/img/blog-auxCord.png" class="blog-image">
+					<h3 class="blog-subtitle">
+						Subtitle
+					</h3>
+					<p class="blog-paragraph">
+						Deciding what music to listen to can be a challenge. Its even more difficult to determine what to listen to when you are
+						forced to subject those around you to your personal music taste.
 					</p>
-					<p class="project-title">
-						<a href="#">
-							Personal Website
-						</a>
-					</p>
-					<p class="project-description">
-						A website I made from scratch learn about front end development and as a way to consolidate my online activities.
-					</p>
-					<p class="project-blog_link">
-						<a>
-							Read more →
-						</a>
-					</p>
-				</div>
-				<div class="project-item">
-					<div class="project-thumbnail">
-						<a href="blog-posts/blog-auxCord">
-							<img src="../content/img/blog-auxCord.png" class="project-image">
-						</a>
-					</div>
-					<p class="project-date">
-						June 3, 2018
-					</p>
-					<p class="project-title">
-						<a href="blog-posts/blog-auxCord">
-							auxCord
-						</a>
-					</p>
-					<p class="project-description">
-						My contribution to the web app my friends and I made during Clemson's 2018 hackathon.
-					</p>
-					<p class="project-blog_link">
-						<a>
-							Read more →
-						</a>
-					</p>
-				</div>
-				<div class="project-item">
-					<div class="project-thumbnail">
-						<a href="blog-posts/blog-auxCord">
-							<img src="#" class="project-image">
-						</a>
-					</div>
-					<p class="project-date">
-						Month Day, Year
-					</p>
-					<p class="project-title">
-						<a href="blog-posts/blog-auxCord">
-							Project Title
-						</a>
-					</p>
-					<p class="project-description">
-						A description explaining what the project is about.
-					</p>
-					<p class="project-blog_link">
-						<a>
-							Read more →
-						</a>
-					</p>
+					
 				</div>
 			</div>
 		</div>
 	</div>
+
 
 	<!--Footer Links-->
 	<section class="footer">
@@ -204,9 +166,10 @@
 		</ul>
 	</section>
 
-
 </body>
 
 </html>
+
+
 
 </DOCTYPE>

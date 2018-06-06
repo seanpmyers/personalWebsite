@@ -102,7 +102,31 @@
 	</section>
 
 	<!-- Content: Body paragraph -->
-	<script src="../js/generateBlogPost.js"></script>
+	<div class="blog">
+		<div class="blog-canvas">
+			<div class="blog-grid">
+				<div class="blog-item">
+					<h1 class="blog-title">
+						Blog Post Name
+					</h1>
+					<h2 class="blog-date">
+						Month Day, Year
+					</h2>
+					<p class="blog-paragraph">
+						This is filler text for the blog post.
+					</p>
+					<img src="../content/img/" class="blog-image">
+					<h3 class="blog-subtitle">
+						Subtitle
+					</h3>
+					<p class="blog-paragraph">
+						This is filler text for the blog post.
+					</p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<!--Footer Links-->
