@@ -131,7 +131,7 @@
 				<div class="project-item">
 					<div class="project-thumbnail">
 						<a href="blog-posts/blog-auxCord">
-							<img src="../content/img/blog-auxCord.png" class="project-image">
+							<img src="../content/img/blog-auxCord/blog-auxCord.png" class="project-image">
 						</a>
 					</div>
 					<p class="project-date">
