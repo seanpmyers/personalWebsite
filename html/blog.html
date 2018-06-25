@@ -55,51 +55,46 @@
 <!-- Body-->
 
 <body class="blogBody" onload="switchNavbar();">
-
-	<section class="nav-name" onload="switchLang();">
-		<!-- Item 1: My name -->
-		<li Style="float:lef" class="myName" id="name">
-			Sean Myers
-		</li>
-	</section>
-
 	<!-- Navbar -->
-	<section class="nav" onload="switchLang();">
-		<ul class="navBar-Ulist">
-			<!-- Item 1: Home page link -->
-			<li class="navBar-list">
-				<a href="../index" class="navBar-item" id="home">
-					Home
-				</a>
-			</li>
-			<!-- Item 3: Blog page link -->
-			<li class="navBar-list">
-				<a href="blog" class="navBar-item" id="navBar-item-active">
-					<div id="blog">
+	<section class="navbar" onload="switchLang();">
+		<div class="navbar-canvas">
+			<div class="my-Name" id="name">
+				Sean Myers
+			</div>
+			<div class="navbar-grid">
+				<!-- Item 1: Home page link -->
+				<div class="navBar-item">
+					<a href="index" id="home">
+						Home
+					</a>
+				</div>
+				<!-- Item 2: Blog page link -->
+				<div class="navBar-item" id="navBar-item-active">
+					<a href="html/blog" id="blog">
 						Blog
-					</div>
-				</a>
-			</li>
-			<!-- Item 4: Project page link -->
-			<li class="navBar-list">
-				<a href="projects" class="navBar-item" id="projects">
-					Projects
-				</a>
-			</li>
-			<!-- Item 5: About page link -->
-			<li class="navBar-list">
-				<a href="about" class="navBar-item" id="about">
-					About
-				</a>
-			</li>
-			<!-- Item 2: Language switching button -->
-			<li class="navBar-list">
-				<a onclick="switchLang(); switchNavbar();" class="navBar-item" id="language">
-					中文/Zh
-				</a>
-			</li>
-		</ul>
+					</a>
+				</div>
+				<!-- Item 3: Project page link -->
+				<div class="navBar-item">
+					<a href="html/projects" id="projects">
+						Projects
+					</a>
+				</div>
+				<!-- Item 4: About page link -->
+				<div class="navBar-item">
+					<a href="html/about" id="about">
+						About
+					</a>
+				</div>
+				<!-- Item 5: Language switching button -->
+				<div class="navBar-item">
+					<a onclick="switchLang(); switchNavbar(); switchLangIndexBody();" id="language">
+						中文/Zh
+					</a>
+				</div>
+			</div>
 	</section>
+
 
 	<!-- Content: Body paragraph -->
 	<div class="blog">
@@ -113,8 +108,7 @@
 						Last updated June 3rd, 2018
 					</h2>
 					<p class="blog-paragraph">
-						This section of the site is where you can find my writeups 
-						about projects and my other interests. 
+						This section of the site is where you can find my writeups about projects and my other interests.
 					</p>
 					<h3 class="blog-subtitle2">
 						Most Recent Posts
@@ -141,30 +135,24 @@
 	</div>
 
 
-	<!--Footer Links-->
+	<!-- Footer -->
 	<section class="footer">
-		<ul class="footer-Ulist">
-			<li class="footer-list">
+		<div class="footer-canvas">
+			<div class="navbar-grid">
 				<a href="https://www.facebook.com/spmyers22" target="_blank" class="footer-item" id="Facebook">
 					Facebook
 				</a>
-			</li>
-			<li class="footer-list">
 				<a href="https://twitter.com/spmyers22" target="_blank" class="footer-item" id="Twitter">
 					Twitter
 				</a>
-			</li>
-			<li class="footer-list">
 				<a href="https://www.linkedin.com/in/spmyers/" target="_blank" class="footer-item" id="Linkedin">
 					Linkedin
 				</a>
-			</li>
-			<li class="footer-list">
 				<a href="https://github.com/seanpmyers" target="_blank" class="footer-item" id="Github">
 					Github
 				</a>
-			</li>
-		</ul>
+			</div>
+		</div>
 	</section>
 
 </body>

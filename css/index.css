@@ -5,62 +5,104 @@ html {
   font-size: 16px;
 }
 
-/* Header */
+/* Body */
 
-.header {
-  background-color: #263b4b;
-  color: rgb(29, 30, 31);
+body {
+  background: #ffffff;
+  color: rgb(49, 49, 49);
+  margin: 0 auto;
 }
 
 /* NavBar */
-
-.nav-name {
-  padding-top: 10px;
-  display: block;
+.navbar {
   background-color: #ffffff;
-  position: fixed;
-  right: 0px;
-  left: 0px;
-  top: 0px;
-  text-align: center;
-  z-index: 1;
-}
-
-.myName {
-  display: inline-block;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  text-align: center;
-  font-size: 250%;
-  clear: both;
-  margin: auto;
-}
-
-.nav {
-  background-color: #ffffff;
+  z-index: 2;
   position: fixed;
   right: 0;
   left: 0;
-  top: 57.5px;
+  top: 0;
+  text-align: center;
+}
+
+.navbar-canvas {
+  max-width: 425px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.navbar-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+
+}
+
+.my-Name {
+  text-align: center;
+  padding-top: 15px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 250%;
+  opacity: .85;
+}
+
+.navBar-item {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.navBar-item a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navBar-item a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
+#navBar-item-active {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  opacity: .8;
+}
+
+/* Opacity on hover */
+
+.navbar-grid:hover>.navBar-item{
+  opacity: .25;
+}
+
+.navbar-grid:hover>#navBar-item-active {
+  opacity: .5;
+}
+
+.navbar-grid:hover>.navBar-item:hover {
+  opacity: .5;
+}
+
+/* Footer CSS */
+
+.footer {
+  background-color: #ffffff;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
   text-align: center;
   z-index: 1;
 }
 
-.navBar-Ulist {
-  display: inline-block;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.footer-canvas {
+  max-width: 425px;
+  padding: 5px;
+  margin: 0 auto;
   background-color: #ffffff;
-  overflow: auto;
 }
 
-.navBar-list {
-  display: inline;
-}
-
-.navBar-item {
-  display: inline-block;
+.footer-item {
   color: rgb(0, 0, 0);
   padding: 14px 16px;
   text-decoration: none;
@@ -70,33 +112,17 @@ html {
   cursor: pointer;
 }
 
-.navBar-item:hover {
-  background-color: rgb(255, 255, 255);
-  color: #000000;
+/* Hover on everything but opacity effect */
+
+.navbar-grid:hover>.footer-item {
+  opacity: .25;
 }
 
-#navBar-item-active {
-  background-color: rgb(255, 255, 255);
-  color: #000000;
-  opacity: 1;
-}
-
-/* Opacity on hover */
-
-.navBar-Ulist:hover>.navBar-list {
+.navbar-grid:hover>.footer-item:hover {
   opacity: .5;
 }
 
-.navBar-Ulist:hover>.navBar-list:hover {
-  opacity: 1;
-}
-
-/* Body */
-
-body {
-  background: #ffffff;
-  color: rgb(49, 49, 49);
-}
+/* Blog */
 
 .blogBody {
   background: #f5f5f6;
@@ -505,52 +531,6 @@ bodyContent {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* Footer CSS */
-
-.footer {
-  background-color: #ffffff;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  z-index: 1;
-}
-
-.footer-Ulist {
-  display: inline-block;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: auto;
-  background-color: #ffffff;
-}
-
-.footer-list {
-  display: inline;
-}
-
-.footer-item {
-  display: inline-block;
-  color: rgb(0, 0, 0);
-  padding: 14px 16px;
-  text-decoration: none;
-  text-align: center;
-  opacity: .5;
-  overflow: auto;
-  cursor: pointer;
-}
-
-/* Hover on everything but opacity effect */
-
-.footer-Ulist:hover>.footer-list {
-  opacity: .5;
-}
-
-.footer-Ulist:hover>.footer-list:hover {
-  opacity: 1;
 }
 
 @media only screen and (max-width:800px) {
