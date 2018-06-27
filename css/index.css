@@ -33,7 +33,6 @@ body {
 .navbar-grid {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-
 }
 
 .my-Name {
