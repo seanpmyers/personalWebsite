@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!-- HTML -->
+<html lang="en-US">
+
+
+
+<!-- Head -->
+
+<head>
+	<!-- Page Viewport: -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Meta Data -->
+	<meta charset="UTF-8">
+	<meta name="author" content="Sean Myers">
+	<meta name="description" content="Personal Website of Sean Myers">
+	<meta name="keywords" content="Sean, Myers, Sean Myers, Personal Website, Hilton Head, Clemson, SC">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Style related links -->
+	<link rel="stylesheet" href="../../css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+	<!-- Scripts -->
+
+	<!-- Content related -->
+	<script src="../../js/switchLang.js"></script>
+	<script src="../../js/switchNavbar.js"></script>
+
+	<!-- LightBox -->
+	<script src="../../js/lightbox.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114400072-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-114400072-1');
+	</script>
+
+	<!-- Tag for facebook open graph - link's thumbnail-->
+	<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#">
+	<meta property="og:title" content="Sean Myers" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="favicon.ico" />
+
+	<!-- Title -->
+	<title>SM-Blog-auxCord</title>
+
+</head>
+
+
+<!-- Body-->
+
+<body class="blogBody" onload="switchNavbar();">
+	<!-- Navbar -->
+	<section class="navbar" onload="switchLang();">
+		<div class="navbar-canvas">
+			<div class="my-Name" id="name">
+				Sean Myers
+			</div>
+			<div class="navbar-grid">
+				<!-- Item 1: Home page link -->
+				<div class="navBar-item">
+					<a href="../../index" id="home">
+						Home
+					</a>
+				</div>
+				<!-- Item 2: Blog page link -->
+				<div class="navBar-item" id="navBar-item-active">
+					<a href="../../html/blog" id="blog">
+						Blog
+					</a>
+				</div>
+				<!-- Item 3: Project page link -->
+				<div class="navBar-item">
+					<a href="../../html/projects" id="projects">
+						Projects
+					</a>
+				</div>
+				<!-- Item 4: About page link -->
+				<div class="navBar-item">
+					<a href="../../html/about" id="about">
+						About
+					</a>
+				</div>
+				<!-- Item 5: Language switching button -->
+				<div class="navBar-item">
+					<a onclick="switchLang(); switchNavbar(); switchLangIndexBody();" id="language">
+						中文/Zh
+					</a>
+				</div>
+			</div>
+	</section>
+
+
+	<!-- Content: Body paragraph -->
+	<div class="blog">
+		<div class="blog-canvas">
+			<div class="blog-grid">
+				<div class="blog-item">
+					<h1 class="blog-title">
+						auxCord
+					</h1>
+					<h2 class="blog-date">
+						Posted: June 3rd, 2018
+						<br> Updated: June 26th, 2018
+					</h2>
+					<h2 class="blog-subtitle">
+						Overview
+					</h2>
+					<p class="blog-paragraph">
+						auxCord is a web application for Spotify users, originally developed during Clemson University's 2018 hackathon. The application
+						allows two users to sync their accounts, and then generates for both users that contains a mixture of their music preferences.
+						auxCord gets it's name from the idea's origin: when driving on a road trip with a friend, the auxiliary cord may be
+						passed back in forth in order to share each person's preferred music. This app aims to find the music that both individuals
+						are most likely to both enjoy and put it in one playlist for the user's convenience. auxCord won
+
+						<a href="https://devpost.com/software/auxcord" id="blog-link">
+							<b>"Best Cloud Based Hack"</b>
+						</a> at Clemson's 2018 Hackathon.
+					</p>
+					<h2 class="blog-subtitle2">
+						<a href="https://devpost.com/software/auxcord">
+							Read the Devpost!
+						</a>
+						<br> Try it:
+						<a href="http://auxcord.io">
+							http://auxCord.io!
+						</a>
+						<br> Check out the code on
+						<a href="https://github.com/csteinmetz1/auxCord">
+							Github.
+						</a>
+					</h2>
+					<img src="../../content/img/blog-auxCord/blog-auxCord.png" class="blog-image">
+					<h2 class="blog-subtitle">
+						Backstory
+					</h2>
+					<p class="blog-paragraph">
+						<a href="http://cuhack.it" id="blog-link">
+							CUhackit
+						</a>
+						was Clemson's first hackathon, and one of my roommates,
+						<a href="http://angelo.carrabba.io/#/" id="blog-link">
+							Angelo Carrabba
+						</a>, was one of the founding members. Angelo told myself and another one of our roommates,
+						<a href="http://www.christiansteinmetz.com/" id="blog-link">
+							Christian Steinmetz
+						</a>, about the hackathon and suggested we take part. Christian was an electrical engineering major, but he had recently
+						participated in Georgia Tech's 2017 hackathon with Angelo, and had done a lot of side projects involving software around
+						that time. That coupled with his ridiculous work ethic and never-ending list of ideas led him to sign up for Clemson's
+						hackathon, with the intent to win. Initially I was not one-hundred percent committed to joining, but after thinking
+						about it a bit I also decided to join Christian in participating. One of my major motivators stemming from when
+						<a href="https://github.com/csheare" id="blog-link">
+							Courtney
+						</a>, another founder of CUhackit, and Angelo told me about the first place prize being a Nintendo switch. The max
+						team size for this hackathon was four members, so Christian and I both asked a friend (
+						<a href="https://www.dunnavant.live/" id="blog-link">
+							Preston
+						</a>and
+						<a href="https://github.com/haroldhyte" id="blog-link">
+							Harold
+						</a>
+						), and thus we created our team.
+					</p>
+					<h2 class="blog-subtitle">
+						Hackathon Pictures
+					</h2>
+					<!-- Lightbox 1-->
+					<section>
+						<div class="row">
+							<div class="column">
+								<img src="../../content/img/blog-auxCord/hackathon/christian-coding.JPG" style="width:100%" onclick="openModal();currentSlide(1)"
+								 class="hover-shadow cursor" id="lightbox-img">
+							</div>
+							<div class="column">
+								<img src="../../content/img/blog-auxCord/hackathon/christian-lapotp-code.JPG" style="width:100%" onclick="openModal();currentSlide(2)"
+								 class="hover-shadow cursor" id="lightbox-img">
+							</div>
+							<div class="column">
+								<img src="../../content/img/blog-auxCord/hackathon/me-auxcord-screen.JPG" style="width:100%" onclick="openModal();currentSlide(3)"
+								 class="hover-shadow cursor" id="lightbox-img">
+							</div>
+							<div class="column">
+								<img src="../../content/img/blog-auxCord/hackathon/harold-logo-colors.JPG" style="width:100%" onclick="openModal();currentSlide(4)"
+								 class="hover-shadow cursor" id="lightbox-img">
+							</div>
+						</div>
+						<div id="myModal" class="modal">
+							<span class="close cursor" onclick="closeModal()">&times;</span>
+							<div class="modal-content">
+								<div class="mySlides">
+									<div class="numbertext">1 / 4</div>
+									<img src="../../content/img/blog-auxCord/hackathon/christian-coding.JPG" style="width:100%" id="lightbox-img">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">2 / 4</div>
+									<img src="../../content/img/blog-auxCord/hackathon/christian-lapotp-code.JPG" style="width:100%" id="lightbox-img">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">3 / 4</div>
+									<img src="../../content/img/blog-auxCord/hackathon/me-auxcord-screen.JPG" style="width:100%" id="lightbox-img">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">4 / 4</div>
+									<img src="../../content/img/blog-auxCord/hackathon/harold-logo-colors.JPG" style="width:100%" id="lightbox-img">
+								</div>
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+								<div class="caption-container">
+									<p id="caption"></p>
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="../../content/img/blog-auxCord/hackathon/christian-coding.JPG" style="width:100%" onclick="currentSlide(1)"
+									 alt="Christian working" id="lightbox-img">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="../../content/img/blog-auxCord/hackathon/christian-lapotp-code.JPG" style="width:100%" onclick="currentSlide(2)"
+									 alt="auxCord code during hackathon">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="../../content/img/blog-auxCord/hackathon/me-auxcord-screen.JPG" style="width:100%" onclick="currentSlide(3)"
+									 alt="Testing the site" id="lightbox-img">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="../../content/img/blog-auxCord/hackathon/harold-logo-colors.JPG" style="width:100%" onclick="currentSlide(4)"
+									 alt="Harold working on the logo" id="lightbox-img">
+								</div>
+							</div>
+						</div>
+					</section>
+					<h2 class="blog-subtitle">
+						Development
+					</h2>
+					<p class="blog-paragraph">
+						The majority of development occured during the actual hackathon. Initially Christian had come up with a rough idea of how
+						the app would work during the week leading up to the hackathon. During the twenty-four hour hackathon, core functionality
+						was implemented, graphical designs were made, the domain was bought, and the server was brought online. Since then
+						there have been a few updates, but for the most part the basic structure as remained the same. auxCord's frontend consists
+						of some html, css, and some simple javascript. The backend runs on node.js and the majority of the code for the app
+						focuses on dealing with spotify's api and execution of the algorithim that creates the playlist.
+					</p>
+					<!-- Lightbox 2-->
+					<h2 class="blog-subtitle">
+						Looking Forward
+					</h2>
+					<p class="blog-paragraph">
+						Sometime in the near future we hope to update auxCord. This includes things like improving the algorithim, allowing for more
+						than two users to sync at once, and fixing some backend issues.
+						<br>
+						<br> Until then check out the app, and thanks for reading my first blog post!
+					</p>
+					<h2 class="blog-subtitle">
+						People
+					</h2>
+					<p class="blog-paragraph">
+						<ul class="blog-people">
+							<li>
+								<a href="http://www.christiansteinmetz.com/" id="blog-link">
+									Christian Steinmetz
+								</a>
+							</li>
+							<li>
+								<a href="https://www.dunnavant.live/" id="blog-link">
+									Preston Dunnavant
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/haroldhyte" id="blog-link">
+									Harold Hyte
+								</a>
+							</li>
+							<li>
+								<a href="http://angelo.carrabba.io/#/" id="blog-link">
+									Angelo Carrabba
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/csheare" id="blog-link">
+									Courtney Shearer
+								</a>
+							</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<section class="footer">
+		<div class="footer-canvas">
+			<div class="navbar-grid">
+				<a href="https://www.facebook.com/spmyers22" target="_blank" class="footer-item" id="Facebook">
+					Facebook
+				</a>
+				<a href="https://twitter.com/spmyers22" target="_blank" class="footer-item" id="Twitter">
+					Twitter
+				</a>
+				<a href="https://www.linkedin.com/in/spmyers/" target="_blank" class="footer-item" id="Linkedin">
+					Linkedin
+				</a>
+				<a href="https://github.com/seanpmyers" target="_blank" class="footer-item" id="Github">
+					Github
+				</a>
+			</div>
+		</div>
+	</section>
+
+</body>
+
+</html>
+
+
+
+</DOCTYPE>

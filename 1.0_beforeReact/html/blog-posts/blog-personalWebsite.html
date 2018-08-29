@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- HTML -->
+<html lang="en-US">
+
+
+
+<!-- Head -->
+
+<head>
+	<!-- Page Viewport: -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Meta Data -->
+	<meta charset="UTF-8">
+	<meta name="author" content="Sean Myers">
+	<meta name="description" content="Personal Website of Sean Myers">
+	<meta name="keywords" content="Sean, Myers, Sean Myers, Personal Website, Hilton Head, Clemson, SC">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Style related links -->
+	<link rel="stylesheet" href="../../css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+	<!-- Scripts -->
+
+	<!-- Content related -->
+	<script src="../../js/switchLang.js"></script>
+	<script src="../../js/switchNavbar.js"></script>
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114400072-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-114400072-1');
+	</script>
+
+	<!-- Tag for facebook open graph - link's thumbnail-->
+	<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#">
+	<meta property="og:title" content="Sean Myers" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="favicon.ico" />
+
+	<!-- Title -->
+	<title>SM-Blog-MyPersonalWebsite</title>
+
+</head>
+
+
+<!-- Body-->
+
+<body class="blogBody" onload="switchNavbar();">
+	<!-- Navbar -->
+	<section class="navbar" onload="switchLang();">
+		<div class="navbar-canvas">
+			<div class="my-Name" id="name">
+				Sean Myers
+			</div>
+			<div class="navbar-grid">
+				<!-- Item 1: Home page link -->
+				<div class="navBar-item">
+					<a href="../../index" id="home">
+						Home
+					</a>
+				</div>
+				<!-- Item 2: Blog page link -->
+				<div class="navBar-item" id="navBar-item-active">
+					<a href="../../html/blog" id="blog">
+						Blog
+					</a>
+				</div>
+				<!-- Item 3: Project page link -->
+				<div class="navBar-item">
+					<a href="../../html/projects" id="projects">
+						Projects
+					</a>
+				</div>
+				<!-- Item 4: About page link -->
+				<div class="navBar-item">
+					<a href="../../html/about" id="about">
+						About
+					</a>
+				</div>
+				<!-- Item 5: Language switching button -->
+				<div class="navBar-item">
+					<a onclick="switchLang(); switchNavbar(); switchLangIndexBody();" id="language">
+						中文/Zh
+					</a>
+				</div>
+			</div>
+	</section>
+
+
+	<!-- Content: Body paragraph -->
+	<div class="blog">
+		<div class="blog-canvas">
+			<div class="blog-grid">
+				<div class="blog-item">
+					<h1 class="blog-title">
+						My Personal Website
+					</h1>
+					<h2 class="blog-date">
+						Posted: June 3rd, 2018
+						<br> Updated June 15th, 2018
+					</h2>
+					<p class="blog-paragraph">
+						Sorry! This blog post is temporarily unavailable. =(
+					</p>
+					<h3 class="blog-subtitle">
+
+					</h3>
+					<p class="blog-paragraph">
+
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<section class="footer">
+		<div class="footer-canvas">
+			<div class="navbar-grid">
+				<a href="https://www.facebook.com/spmyers22" target="_blank" class="footer-item" id="Facebook">
+					Facebook
+				</a>
+				<a href="https://twitter.com/spmyers22" target="_blank" class="footer-item" id="Twitter">
+					Twitter
+				</a>
+				<a href="https://www.linkedin.com/in/spmyers/" target="_blank" class="footer-item" id="Linkedin">
+					Linkedin
+				</a>
+				<a href="https://github.com/seanpmyers" target="_blank" class="footer-item" id="Github">
+					Github
+				</a>
+			</div>
+		</div>
+	</section>
+
+</body>
+
+</html>
+
+
+
+</DOCTYPE>
