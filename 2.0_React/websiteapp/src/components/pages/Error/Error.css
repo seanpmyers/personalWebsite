@@ -1,0 +1,24 @@
+.error {
+  font-family: 'Roboto';
+  font-weight: 200;
+  font-size: 50px;
+  margin: 0;
+  padding-top: 50vh;
+  padding-bottom: 50vh;
+  background: #2a2d3d;
+  color: #606587;
+  text-align: center;
+}
+
+#goBack {
+  text-align: center;
+  color: #849570;
+  font-size: 50px;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+#goBack:hover {
+  color: rgb(137, 199, 250);
+  cursor: pointer;
+}

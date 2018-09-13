@@ -1,0 +1,37 @@
+.footer {
+  font-family: 'Roboto';
+  background: #222431;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  z-index: 1;
+  padding: 20px;
+}
+
+.footer-canvas {
+  max-width: 425px;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.footer-item {
+  color: #849570;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+  opacity: .75;
+  overflow: auto;
+  cursor: pointer;
+}
+
+/* Hover on everything but opacity effect */
+
+.navbar-grid:hover>.footer-item {
+  opacity: .25;
+}
+
+.navbar-grid:hover>.footer-item:hover {
+  opacity: .5;
+}
