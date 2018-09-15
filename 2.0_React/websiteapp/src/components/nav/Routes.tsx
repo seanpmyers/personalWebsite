@@ -16,10 +16,10 @@ import {
   Projects
 } from '../Components'
 
-function createLink(text: string, route: string, navlinkID: string) {
+function createLink(textEN: string, textZH: string, route: string, navlinkID: string) {
   const link =
-    <NavLink to={route} style={{ textDecoration: 'none' }} id={navlinkID}>
-      {text}
+    <NavLink to={route} style={{ textDecoration: 'none' }} id={navlinkID} >
+        {textEN}
     </NavLink>
   return link;
 }

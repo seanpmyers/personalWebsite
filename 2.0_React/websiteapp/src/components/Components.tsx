@@ -6,7 +6,7 @@ import About from './pages/About/About';
 import Blog from './pages/Blog/Blog';
 import Error from './pages/Error/Error';
 import Home from './pages/Home/Home';
-import AuxCord from './pages/Projects/Blog_auxCord/AuxCord';
+import AuxCord from './pages/Projects/Blog_auxCord/Blog_AuxCord';
 import BlogMyWebsite from './pages/Projects/Blog_MyWebsite/Blog_MyWebsite';
 import BlogTuoMang from './pages/Projects/Blog_TuoMang/Blog_TuoMang';
 import Projects from './pages/Projects/Projects';

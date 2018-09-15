@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './AuxCord.css';
+import '../PostStyle.css';
 
 import {
   createDate,

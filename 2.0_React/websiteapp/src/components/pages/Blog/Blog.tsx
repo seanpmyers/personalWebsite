@@ -1,11 +1,30 @@
 import * as React from 'react';
 import './Blog.css';
 
+import {
+  Footer,
+  Title,
+  Topbar
+} from '../../Components'
+
+let postNumber = 0;
 
 class Blog extends React.Component {
+  public createpost(text: string, date: string, url: string) {
+    postNumber++;
+    const element =
+      <a href={url} id="blog-link">
+        Blog Post #{postNumber}: {text} - {date}
+      </a>
+    return element;
+  }
+
   public render() {
     return (
       <div className="blog">
+        <Title />
+        <Topbar />
+        <Footer />
         <div className="blog-canvas">
           <div className="blog-grid">
             <div className="blog-item">
@@ -19,22 +38,15 @@ class Blog extends React.Component {
                 This section of the site is where you can find my writeups about projects and my other interests.
 					    </p>
               <h3 className="blog-subtitle2">
-                Most Recent Posts
+                All Blog Posts
 					    </h3>
               <div>
                 <p className="blog-paragraph">
-                  <a href="blog-posts/blog-personalWebsite" id="blog-link">
-                    1. Blog Post #2: My Personal Website - June 3rd, 2018
-							    </a>
+                  {this.createpost("My Personal Website", "June 3rd, 2018", "/Projects/Personal_Website")}
                   <br />
-                  <a href="blog-posts/blog-auxCord" id="blog-link">
-                    2. Blog Post #1: auxCord - June 3rd, 2018
-							      </a>
+                  {this.createpost("auxCord", "June 3rd, 2018", "/Projects/auxCord")}
                   <br />
-                  <br />
-                  <a href="blog-posts/blog-list" id="blog-link">
-                    See Full List →
-							    </a>
+                  {this.createpost("TuoMang", "September 14th, 2018", "/Projects/TuoMang")}
                 </p>
               </div>
             </div>
@@ -44,5 +56,7 @@ class Blog extends React.Component {
     );
   }
 }
+
+
 
 export default Blog;

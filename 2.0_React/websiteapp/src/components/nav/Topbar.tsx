@@ -12,16 +12,13 @@ class Topbar extends React.Component {
       <div className="topbarWrapper" id="">
         <ul className="topbarList">
           <li className="topbarLink" >
-            {createLink('Home', '/', 'linkStyle')}
+            {createLink('Home', '', '/', 'linkStyle')}
           </li>
           <li className="topbarLink" >
-            {createLink('Blog', '/Blog', 'linkStyle')}
+            {createLink('Blog', '', '/Blog', 'linkStyle')}
           </li>
           <li className="topbarLink" >
-            {createLink('Projects', '/Projects', 'linkStyle')}
-          </li>
-          <li className="topbarLink" >
-            {createLink('About', '/About', 'linkStyle')}
+            {createLink('Projects', '', '/Projects', 'linkStyle')}
           </li>
         </ul>
       </div>

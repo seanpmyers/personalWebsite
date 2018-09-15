@@ -24,6 +24,16 @@
   opacity: .75;
   overflow: auto;
   cursor: pointer;
+} 
+
+.footer-item div {
+  color: #849570;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+  opacity: .75;
+  overflow: auto;
+  cursor: pointer;
 }
 
 /* Hover on everything but opacity effect */

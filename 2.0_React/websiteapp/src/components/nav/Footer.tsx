@@ -2,7 +2,6 @@ import * as React from 'react';
 import "roboto-fontface"
 import "./Footer.css"
 
-
 class Footer extends React.Component {
   public render() {
     return (

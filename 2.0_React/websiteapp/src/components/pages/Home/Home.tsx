@@ -33,13 +33,11 @@ class Home extends React.Component {
                 </strong> here.
                 <br />
                 <br /> For general information concerning this site, check out&nbsp;
-                {createLink('my blog post', '/Projects/Personal_Website', 'links')}
-                .
+                {createLink('my blog post', '', '/Projects/Personal_Website', 'links')}.
                 <br /> You can find write ups on projects I have worked on under&nbsp;
-                {createLink('Projects', '/Projects', 'links')}.
-
+                {createLink('Projects', '', '/Projects', 'links')}.
                 <br /> If you're interested in what I've been up to recently, go to my&nbsp;
-                {createLink('Blog', '/Blog', 'links')}.
+                {createLink('Blog', '', '/Blog', 'links')}.
                 <br />
                 <br /> My social media and other links can be found at the bottom of the page.
                 <br />
