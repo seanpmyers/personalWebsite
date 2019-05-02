@@ -1,3 +1,6 @@
 awsExport/
 content/img/blog-auxCord/hackathon
 node_modules/
+1.0_Vanilla/exportToAws.sh
+1.0_Vanilla/content
+2.0_React/data/images
