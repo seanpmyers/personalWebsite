@@ -4,6 +4,10 @@
 
 Made with:
 
-- GoLang
-- HTML
-- CSS
+- Frontend:
+  - HTML
+  - CSS
+  - [Feather Icons](https://feathericons.com)
+  - [tailwind css](https://tailwindcss.com)
+- Backend:
+  - [GoLang](https://golang.org/)
